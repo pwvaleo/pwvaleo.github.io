@@ -7,11 +7,27 @@ body {
 header, section {
     max-width: 1024px;
     margin: 0 auto!important;
-    border: 1px solid blue;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: .5rem;
     text-align: left;
+}
+header {
+    border: 0;
+}
+header h2 {
+    color: #569;
+    font-size: 1.125rem;
+}
+section {
+    background-color: hsl(200, 100%, 97%);
 }
 h2 {
     font-size: 1.25rem;
+}
+section h3 {
+    font-size: 1.125rem;
+    color: hsl(200, 100%, 15%)
 }
 nav ul {
     display: flex;
@@ -29,6 +45,7 @@ nav ul li {
 
 }
 
+
 nav ul li a {
     /*text-decoration: none;*/
     /*color: hsl(200, 100%, 30%);*/
@@ -42,4 +59,42 @@ a {
 }
 a:hover {
     color: hsl(200, 100%, 50%);
+}
+
+.centered {
+    display: block;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+.clickable-image {
+    margin: auto;
+    border: 1px solid #ccc;
+    background-color: hsl(200, 100%, 95%);
+    border-radius: 1rem;
+    box-shadow: #ccc 0px 2px ;
+}
+
+.clickable-image:hover {
+    box-shadow: #ccc 2px 3px 3px;
+}
+
+.table {
+    border: 1px solid #ccc;
+    /* border-radius: .5rem!important; */
+}
+
+.table tr th {
+    background-color: hsl(200, 100%, 30%)!important;
+    color: white;
+}
+th, td {
+    border-right: 1px solid #ccc;
+    text-align: center;
+}
+tr:nth-of-type(even) td {
+    background-color: hsl(200, 100%, 92%);
+}
+tr:nth-of-type(odd) td {
+    background-color: hsl(200, 100%, 97%);
 }
