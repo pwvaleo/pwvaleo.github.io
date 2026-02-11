@@ -14,10 +14,12 @@ header, section {
 }
 header {
     border: 0;
+    padding-left: 0;
 }
 header h2 {
     color: #569;
     font-size: 1.125rem;
+    
 }
 section {
     background-color: hsl(200, 100%, 97%);
@@ -32,16 +34,18 @@ section h3 {
 nav ul {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
-    /*border: 2px solid blue;*/
+    justify-content: flex-end;
+    width: 100%;
+    /* border: 2px solid blue; */
     padding: 0;
     margin: 0;
+
 }
 nav ul li {
     text-decoration: none;
     list-style: none;
-    margin: 0;
-    padding-left: 0;
+    margin: 0!important;
+    padding-left: 0!important;
 
 }
 
@@ -50,6 +54,7 @@ nav ul li a {
     /*text-decoration: none;*/
     /*color: hsl(200, 100%, 30%);*/
     /*font-weight: 700;*/
+    margin-left: 0!important;
 }
 
 a {
